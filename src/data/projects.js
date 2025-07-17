@@ -1,18 +1,17 @@
 export const projects = [
   {
-    name: "Projeto 1",
-    description: "Atividade Props Card Pessoas",
+    name: "Loja de Álbuns",
+    description: "Um site com filtro de álbuns musicais por gênero e preço.",
+    img: "/assets/album-store.png",
+    repo: "https://github.com/seuusuario/album-store",
+    deploy: "https://album-store.vercel.app"
   },
   {
-    name: "Projeto 2",
-    description: "Atividade Praticando Children",
+    name: "To-do List",
+    description: "Aplicação de lista de tarefas com React.",
+    img: "/assets/todo-app.png",
+    repo: "https://github.com/seuusuario/todo-app",
+    deploy: "https://todo-app.vercel.app"
   },
-  {
-    name: "Projeto 3",
-    description: "Descrição do projeto",
-  },
-  {
-    name: "Projeto 4",
-    description: "Descrição do projeto",
-  },
+  // Adicione mais projetos aqui
 ];

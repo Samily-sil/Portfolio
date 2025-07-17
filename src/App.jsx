@@ -1,12 +1,16 @@
 import React from "react";
-import UserSection from "./components/UserSection";
-import TechSection from "./components/TechSection";
-import ProjectsSection from "./components/ProjectsSection";
+import {AboutMeSection} from "./components/AboutMeSection";
+// import TechSection from "./components/TechSection";
+// import ProjectsSection from "./components/ProjectsSection";
+import { Header } from "./components/Header";
+import { TechSection } from './components/TechSection';
+import { ProjectsSection } from './components/ProjectsSection';
 
 function App() {
   return (
     <div>
-      <UserSection />
+      <Header/>
+      <AboutMeSection />
       <TechSection />
       <ProjectsSection />
     </div>

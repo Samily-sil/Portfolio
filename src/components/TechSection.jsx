@@ -1,19 +1,11 @@
-// TechSection.jsx
-import React from "react";
-import { technologies } from "../data/technologies"; // ajuste o caminho se estiver diferente
+import styles from '../styles/TechSection.module.css';
+import { TechList } from './TechList';
 
-export default function TechSection() {
+export function TechSection() {
   return (
-    <section>
-      <h2>Tecnologias</h2>
-      <ul>
-        {technologies.map((tech, index) => (
-          <li key={index}>
-            <img src={tech.img} alt={tech.name} style={{ width: "30px", marginRight: "8px" }} />
-            {tech.name}
-          </li>
-        ))}
-      </ul>
+    <section className={styles.section} id="techs">
+      <h2 className={styles.title}>Tecnologias</h2>
+      <TechList />
     </section>
   );
 }

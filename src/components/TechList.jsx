@@ -1,14 +1,13 @@
-import { technologies } from "../data/technologies";
-import TechCard from "./TechCard";
+import { TechCard } from './TechCard';
+import styles from '../styles/TechList.module.css';
+import { technologies } from '../data/technologies';
 
-function TechList() {
+export function TechList() {
   return (
-    <ul>
-      {technologies.map((tech) => (
-        <TechCard key={tech.id} tech={tech} />
+    <ul className={styles.list}>
+      {technologies.map((tech, index) => (
+        <TechCard key={index} tech={tech} />
       ))}
     </ul>
   );
 }
-
-export default TechList;

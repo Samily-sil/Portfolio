@@ -1,17 +1,11 @@
-import React from "react";
-import { projects } from "../data/projects"; // ajuste o caminho se necessário
+import styles from '../styles/ProjectsSection.module.css';
+import { ProjectsList } from './ProjectsList';
 
-export default function ProjectsSection() {
+export function ProjectsSection() {
   return (
-    <section>
-      <h2>Projetos</h2>
-      <ul>
-        {projects.map((project, index) => (
-          <li key={index}>
-            <strong>{project.name}</strong>: {project.description}
-          </li>
-        ))}
-      </ul>
+    <section className={styles.section} id="projects">
+      <h2 className={styles.title}>Projetos</h2>
+      <ProjectsList />
     </section>
   );
 }
