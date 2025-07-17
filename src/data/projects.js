@@ -13,5 +13,4 @@ export const projects = [
     repo: "https://github.com/seuusuario/todo-app",
     deploy: "https://todo-app.vercel.app"
   },
-  // Adicione mais projetos aqui
 ];

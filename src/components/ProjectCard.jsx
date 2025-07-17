@@ -3,7 +3,7 @@ import styles from '../styles/ProjectCard.module.css';
 export function ProjectCard({ project }) {
   return (
     <li className={styles.card}>
-      <img src={project.img} alt={project.name} className={styles.image} />
+      {/* <img src={project.img} alt={project.name} className={styles.image} /> */}
       <h3 className={styles.name}>{project.name}</h3>
       <p className={styles.description}>{project.description}</p>
       <div className={styles.links}>
